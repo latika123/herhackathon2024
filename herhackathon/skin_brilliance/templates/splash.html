@@ -1,0 +1,24 @@
+<body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splash Screen</title>
+    <!-- Your CSS styles here -->
+    <style>
+        .SplashScreen {
+            width: 430px;
+            height: 932px;
+            position: relative;
+            background: #6B54A8;
+        }
+        /* Add your other CSS styles */
+    </style>
+   <div class="SplashScreen">
+    <img class="NameLogoAndSlogan1" style="width: 432px; height: 932px; display: inline-flex; position: relative" src="{{ url_for('static', filename='image/splashscreen.png') }}" />
+    </div>
+    <!-- Your JavaScript script for redirection -->
+    <script>
+        setTimeout(function() {
+            window.location.href = "/login";
+        }, 2000);  // Adjust delay in milliseconds (e.g., 2000 for 2 seconds)
+    </script>
+</body>
